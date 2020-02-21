@@ -1,1 +1,8 @@
-<p>user-list works!</p>
+<h3>User list component</h3>
+
+<div *ngFor="let user of users">
+    {{user._id}} - {{user.first_name}} - {{user.last_name}} -{{user.email}}
+    <button (click)="destroy(user)">delete</button>
+    <button>update</button>
+    <app-user-edit></app-user-edit>
+</div>
