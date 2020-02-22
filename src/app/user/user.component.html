@@ -2,5 +2,5 @@
 
 <pre>{{users | json}}</pre>
 
-<app-user-list [users]="users" (destroyUserEvent)="destroy($event)"></app-user-list>
 <app-user-new (createNewUserEvent)="create($event)"></app-user-new>
+<app-user-list [users]="users" (destroyUserEvent)="destroy($event)" (updateUserEvent)="update($event)"></app-user-list>

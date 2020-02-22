@@ -21,4 +21,10 @@ export class UserListComponent implements OnInit {
       this.destroyUserEvent.emit(user);
   }
 
+  update(users){
+    if(confirm('Actualizar?'))
+      this.updateUserEvent.emit(users);
+  }
+
+
 }
